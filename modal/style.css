@@ -1,0 +1,48 @@
+#myBtn {
+  border-radius: 10px;
+}
+
+#myBtn:hover {
+  opacity: 0.6;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  overflow: auto;
+}
+
+.modal-content {
+  background-color: #888;
+  margin: 15px auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 400px;
+}
+
+.ugasi {
+  float: right;
+  border-radius: 5px;
+  background-color: grey;
+  color: white;
+}
+
+.ugasi:hover {
+  opacity: 0.9;
+}
+
+.ugasi2 {
+  float: right;
+  border-radius: 5px;
+  background-color: blue;
+  color: white;
+  margin-left: 10px;
+}
+
+.ugasi2:hover {
+  opacity: 0.9;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,78 @@
+$myBtnn:10px;
+$modal-sve:(
+  dsp:none,
+  posit:fixed,
+  lft:0,
+  t:0,
+  wdth:100%,
+  overflw:auto
+);
+$modal-sadrzaj:(
+  bcclr:#888,
+  mrg:15px auto,
+  pdd:20px,
+  brd:1px solid #888,
+  wdt:400px
+);
+
+
+#myBtn{
+    border-radius:$myBtnn ;
+}
+#myBtn:hover{
+    opacity: 0.6;
+}
+
+.modal {
+    display: map-get($modal-sve, dsp ) ; 
+    position: map-get($modal-sve, posit ); 
+    left: map-get($modal-sve, lft );
+    top: map-get($modal-sve, t );
+    width: map-get($modal-sve, wdth ); 
+    overflow: map-get($modal-sve, overflw );
+    
+  }
+
+  
+  .modal-content {
+    background-color:map-get($modal-sadrzaj, bcclr );
+    margin: map-get($modal-sadrzaj , mrg ); 
+    padding: map-get($modal-sadrzaj , pdd );
+    border: map-get($modal-sadrzaj , brd );
+    width: map-get($modal-sadrzaj, wdt ); 
+  }
+  
+  
+  $ugasi-dugme:(
+    flt:right,
+    brd-rd:5px,
+    bckrd:grey,
+    clr:white
+  );
+  .ugasi{
+      float: map-get($ugasi-dugme, flt );
+    border-radius: map-get($ugasi-dugme, brd-rd );
+    background-color:map-get($ugasi-dugme, bckrd );
+    color:map-get($ugasi-dugme, clr );
+    
+  }
+  .ugasi:hover{
+      opacity: 0.9;
+  }
+  $ugasi2-dugme:(
+    flt:right,
+    brd-rd: 5px,
+    bck:blue,
+    clr:white,
+    mrgnlft:10px
+  );
+  .ugasi2{
+    float: map-get($ugasi2-dugme, flt );
+  border-radius: map-get($ugasi2-dugme,brd-rd  );;
+  background-color:map-get($ugasi2-dugme, bck );;
+  color:map-get($ugasi2-dugme, clr ); ;
+  margin-left: map-get($ugasi2-dugme,mrgnlft  );;
+}
+.ugasi2:hover{
+    opacity: 0.9;
+}
